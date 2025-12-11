@@ -373,14 +373,26 @@
       }
     }
 
-    /* Footer */
-    footer {
-      margin-top: auto;
+    /* Footer estilo Chrome */
+    .chrome-footer {
       text-align: center;
-      padding: 1.5rem;
-      background: var(--bg-dark);
-      border-top: 1px solid var(--border-color);
-      color: var(--text-light);
+      padding-top: 16px;
+      border-top: 1px solid var(--chrome-border);
+      margin-top: auto;
+    }
+    
+    .powered-by {
+      font-size: clamp(10px, 1.5vw, 14px);
+      color: var(--chrome-text-secondary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+    }
+    
+    .google-logo {
+      color: grey;
+      font-weight: 500;
     }
   </style>
 </head>
@@ -461,10 +473,13 @@
       </div>
     </main>
     
- <!-- Footer -->
-      <footer>
-        © 2025 — Agustín Díaz
-      </footer>
+    <!-- Footer -->
+    <div class="chrome-footer">
+      <div class="powered-by">
+        <span>© 2025 </span>
+        <span class="google-logo"> Agustín Díaz</span>
+      </div>
+    </div>
  </div>
 
   <script>
