@@ -12,14 +12,14 @@
   <meta name="keywords" content="Clima Córdoba, Tiempo Córdoba, Pronóstico Córdoba, Meteorología Córdoba, Temperatura Córdoba">
   <meta name="author" content="Agustín Díaz">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://TU-DOMINIO.com/">
+  <link rel="canonical" href="https://clima-cordoba.netlify.app/">
   
   <!-- Open Graph -->
   <meta property="og:title" content="Clima en Córdoba – Pronóstico Actual">
   <meta property="og:description" content="Consulta el estado del clima en Córdoba ahora: temperatura, humedad, viento y pronóstico detallado.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://i.imgur.com/7TBqZq0.jpeg"> <!-- Podés cambiar la imagen -->
-  <meta property="og:url" content="https://TU-DOMINIO.com/">
+  <meta property="og:url" content="https://clima-cordoba.netlify.app/">
   
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
@@ -338,28 +338,6 @@
       border-radius: 2px;
     }
     
-    /* Footer estilo Chrome */
-    .chrome-footer {
-      text-align: center;
-      padding-top: 16px;
-      border-top: 1px solid var(--chrome-border);
-      margin-top: auto;
-    }
-    
-    .powered-by {
-      font-size: clamp(10px, 1.5vw, 14px);
-      color: var(--chrome-text-secondary);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 4px;
-    }
-    
-    .google-logo {
-      color: var(--chrome-green);
-      font-weight: 500;
-    }
-    
     /* Loading state */
     .loading {
       display: flex;
@@ -393,6 +371,16 @@
       .daily-scroll {
         gap: 12px;
       }
+    }
+
+    /* Footer */
+    footer {
+      margin-top: auto;
+      text-align: center;
+      padding: 1.5rem;
+      background: var(--bg-dark);
+      border-top: 1px solid var(--border-color);
+      color: var(--text-light);
     }
   </style>
 </head>
@@ -473,14 +461,11 @@
       </div>
     </main>
     
-    <!-- Footer -->
-    <div class="chrome-footer">
-      <div class="powered-by">
-        <span>Proporcionado por</span>
-        <span class="google-logo">© Agustín Díaz</span>
-      </div>
-    </div>
-  </div>
+ <!-- Footer -->
+      <footer>
+        © 2025 — Agustín Díaz
+      </footer>
+ </div>
 
   <script>
     // Coordenadas de Córdoba, Argentina
